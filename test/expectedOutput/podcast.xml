@@ -5,7 +5,7 @@
         <description><![CDATA[description]]></description>
         <link>http://example.com</link>
         <generator>Podcast for Node</generator>
-        <lastBuildDate>Wed, 10 Dec 2014 19:04:57 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 21 Dec 2012 06:00:00 GMT</lastBuildDate>
         <atom:link href="http://example.com/rss.xml" rel="self" type="application/rss+xml"/>
         <author><![CDATA[Dylan Greene]]></author>
         <pubDate>Sun, 20 May 2012 04:00:00 GMT</pubDate>

@@ -9,7 +9,8 @@ var q = require('q');
 var includeFolder = require('include-folder');
 var expectedOutput = includeFolder(__dirname + '/expectedOutput', /.*\.xml$/);
 
-// Dates in XML files will always be this value.
+// Dates in XML files will always be this value. (This is overwritten by passing
+// in the lastBuildDate option.)
 require('mockdate').set('Wed, 10 Dec 2014 19:04:57 GMT');
 
 test('empty feed', function(t) {
@@ -24,6 +25,7 @@ test('podcast', function(t) {
     t.plan(1);
 
     var feed = new Podcast({
+                lastBuildDate: new Date(2012, 11, 21, 0, 0, 0, 0).toUTCString(),
                 title: 'title',
                 description: 'description',
                 feed_url: 'http://example.com/rss.xml',
